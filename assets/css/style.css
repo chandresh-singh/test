@@ -1,0 +1,235 @@
+/*==================================
+=            Global CSS            =
+==================================*/
+html, body {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+.section {
+	padding: 100px 0;
+}
+.section__heading {
+	color: #252848;
+}
+.highlight-heading {
+    color: #35a3a6;
+    font-weight: 500;
+}
+.thin-large-heading {
+	color: #252848;
+    font-size: 45px;
+    font-weight: 300;
+}
+/*=====  End of Global CSS  ======*/
+/*==========================================
+=            Banner Section CSS            =
+==========================================*/
+.banner-section {
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 100px 30px;
+}
+.banner-section__text {
+    max-width: 472px;
+}
+.banner-heading {
+    font-size: 60px;
+    font-weight: bold;
+}
+.banner-section__text p {
+    font-size: 18px;
+    font-weight: 500;
+}
+.banner-section__text p strong {
+    font-size: 25px;
+}
+/*.banner-img {
+    max-width: 340px;
+}*/
+/*=====  End of Banner Section CSS  ======*/
+/*================================================
+=            Join and Twitter Section            =
+================================================*/
+.j-section {
+	background-color: #efeff5;
+	padding-top: 0;
+}
+.j-section__img-wrap:after, .contact-txt-bg:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(32, 37, 86, 0.66);
+}
+.j-section__img-txt {
+    position: absolute;
+    top: 100px;
+    color: #fff;
+    z-index: 5;
+    left: 45px;
+    text-align: left;
+}
+.j-section__img-txt:after {
+    position: absolute;
+    content: '';
+    min-width: 140px;
+    height: 2px;
+    background: #2eb8e6;
+    top: 50%;
+    left: -100%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+.j-small-text {
+    font-size: 13px;
+}
+.j-section__text-wrap {
+	padding-top: 100px;
+}
+/*=====  End of Join and Twitter Section  ======*/
+/*=======================================
+=            Speaker Section            =
+=======================================*/
+.highlight-heading--sp {
+    color: #252848;
+}
+.l-social {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    position: relative;
+    z-index: 5;
+}
+.l-social:hover {
+    color: #ffffff;
+}
+.l-li {
+    background-color: #007ab9;
+}
+.l-fb {
+    background-color: #588fc8;
+}
+.sp-social {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 20px;
+}
+.sp-social:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -40px;
+    right: 0;
+    background-image: url(../images/shape.png);
+    transform: rotate(0deg);
+}
+.sp-section__txt {
+    max-width: 430px;
+}
+.sp-section__con {
+    margin-top: 20px;
+}
+h3.sp-section__heading {
+    color: #36a3a6;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0 4px;
+}
+.sp-section__sub {
+    font-weight: bold;
+    font-size: 14px;
+}
+.sp-section__txt--rev {
+    margin-right: 45px;
+}
+/*=====  End of Speaker Section  ======*/
+
+/*==========================================
+=            Glance Section CSS            =
+==========================================*/
+.g-section {
+	background-color: #cbdfe7;
+}
+
+
+/*=====  End of Glance Section CSS  ======*/
+/*===================================
+=            Sol Section            =
+===================================*/
+.sol-section {
+	background-color: #efeff3;
+}
+.sol-section__img {
+	mix-blend-mode: darken;
+}
+.sol-slider__item {
+    background-color: #ffffff;
+    padding: 15px;
+}
+.sol-slider__item .item-heading {
+    color: #252848;
+    font-size: 20px;
+    margin: 20px 0;
+}
+/*=====  End of Sol Section  ======*/
+/*==========================================
+=            Contact US Section            =
+==========================================*/
+.contact-section {
+    padding: 0;
+}
+.contact-form {
+    padding: 100px 0;
+}
+.thin-large-heading--c {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.contact-section {
+    background-color: #36A3A6;
+    color: #ffffff;
+}
+.contact-section__form .form-control-plaintext {
+    border: none;
+    border-bottom: 1px solid #ffffff;
+}
+.contact-section__form  .col-form-label {
+    font-weight: 500;
+    font-size: 13px;
+    padding-bottom: 0;
+}
+.contact-txt-bg {
+    background-image: url(../images/Layer-214.png);
+    background-size: cover;
+    flex-direction: column;
+    position: absolute;
+    left: 70px;
+    right: 15px;
+    top: -80px;
+    bottom: 0;
+    z-index: 5;
+}
+.contact-txt-o {
+    z-index: 5;
+}
+.contact-add {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.contact-mail {
+    font-weight: bold;
+}
+/*=====  End of Contact US Section  ======*/
