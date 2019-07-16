@@ -18,19 +18,48 @@
 		<link rel="stylesheet" href="assets/css/style.css">
 	</head>
 	<body>
+		<header class="tech-head">
+			<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top text-uppercase justify-content-between">
+			  <a class="navbar-brand" href="#">
+			  	<img src="assets/images/Layer-1.png" alt="">
+			  </a>
+			  <!-- Toggler/collapsibe Button -->
+			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+				<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Agenda</a>
+						</li>
+
+						<li class="nav-item nav-item--high">
+							<a class="nav-link" href="#">Solutions</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
 		<!--====================================
 		=            Banner Section            =
 		=====================================-->
 		<section class="section banner-section">
 			<div class="container-fluid">
 				<div class="row align-items-center">
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<div class="banner-time">
+							<span class="text-uppercase">Time left</span>
+							<div id="time-count"></div>
+						</div>
 						<div class="banner-section__text text-uppercase text-center">
 							<h1 class="banner-heading mb-3">Powering up</h1>
 							<p class="m-0">Digital Transformation with <strong class="d-block mt-2">intellignet automation</strong> </p>
 						</div>
 					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right">
+					<div class="col-lg-6 col-md-6 col-sm-12 banner-section__t-img text-right">
 						<img src="assets/images/rocket.png" alt="" class="img-fluid banner-img">
 					</div>
 				</div>
@@ -43,7 +72,7 @@
 		<section class="section j-section">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6 col-md-6 col-sm-6">
+					<div class="col-lg-6 col-md-6 col-sm-12">
 						<div class="j-section__text-wrap">
 							<span class="j-small-text text-uppercase"> core message</span>
 							<h2 class="section__heading mb-4">We take you through Tech Mahindra’s 18 years long Pega partnership</h2>
@@ -59,8 +88,11 @@
 								</p>
 							</div>
 						</div>
+						<div class="j-section__twitter">
+							<a class="twitter-timeline" href="https://twitter.com/tech_mahindra?ref_src=twsrc%5Etfw">Tweets by tech_mahindra</a>
+						</div>
 					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6 text-right">
+					<div class="col-lg-6 col-md-6 col-sm-12 j-section__res text-right">
 						<div class="j-section__img-wrap position-relative d-inline-block">
 							<img src="assets/images/join-img.png" alt="join-img" class="img-fluid j-section__img">
 							<div class="j-section__img-txt text-uppercase text-left">
@@ -89,8 +121,8 @@
 						</div>
 					</div>
 					<div class="col-12">
-						<div class="row mb-5">
-							<div class="col-sm-4">
+						<div class="row mb-5 spk-row-wrap">
+							<div class=" col-md-4 col-sm-12 ">
 								<div class="sp-section__img position-relative d-inline-block">
 									<img src="assets/images/Dummy.png" alt="" class="img-fluid">
 									<div class="sp-social">
@@ -99,7 +131,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-sm-8">
+							<div class="col-md-8 col-sm-12">
 								<div class="sp-section__txt">
 									<img src="assets/images/micro-icon.png" alt="" class="img-fluid">
 									<h3 class="sp-section__heading">
@@ -112,8 +144,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="row flex-row-reverse mb-5">
-							<div class="col-sm-4">
+						<div class="row flex-row-reverse mb-5 spk-row-wrap">
+							<div class="col-md-4 col-sm-12">
 								<div class="sp-section__img position-relative d-inline-block">
 									<img src="assets/images/Dummy.png" alt="" class="img-fluid">
 									<div class="sp-social">
@@ -122,7 +154,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-sm-8 text-right">
+							<div class=" col-md-8 col-sm-12 sp-section--left text-right">
 								<div class="sp-section__txt sp-section__txt--rev d-inline-block">
 									<img src="assets/images/micro-icon.png" alt="" class="img-fluid">
 									<h3 class="sp-section__heading">
@@ -135,8 +167,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-sm-4">
+						<div class="row spk-row-wrap">
+							<div class="col-md-4 col-sm-12">
 								<div class="sp-section__img position-relative d-inline-block">
 									<img src="assets/images/Dummy.png" alt="" class="img-fluid">
 									<div class="sp-social">
@@ -172,7 +204,7 @@
 		<section class="section g-section">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-6">
+					<div class="col-md-6 col-sm-12">
 						<div class="g-section__txt-wrap">
 							<div class="g-section__heading">
 								<span class="highlight-heading text-uppercase">pega practice</span>
@@ -191,7 +223,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-6">
+					<div class="col-md-6 col-sm-12">
 						<iframe width="100%" height="400" src="https://www.youtube.com/embed/FWXZxUdqRsk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				</div>
@@ -265,7 +297,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-6">
+					<div class="col-md-6 col-sm-12">
 						<div class="sol-section__heading mb-4">
 							<div class="thin-large-heading">TechM Solution</div>
 							<div class="highlight-heading">
@@ -276,7 +308,7 @@
 							Join us at Pega World 2019, as we take you through Tech Mahindra’s 18 years long Pega partnership and how we are empowering organizations through their digital transformation journey.
 						</div>
 					</div>
-					<div class="col-sm-6">
+					<div class="col-md-6 col-sm-12">
 						<img src="assets/images/solution.png" alt="" class="img-fluid sol-section__img">
 					</div>
 				</div>
@@ -291,7 +323,7 @@
 		<section class="section contact-section">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-6 contact-form">
+					<div class="col-md-6 col-sm-12 contact-form">
 						<h2 class="thin-large-heading thin-large-heading--c">Contact Us</h2>
 						<div class="contact-section__form">
 							<form>
@@ -323,7 +355,7 @@
 							</form>
 						</div>
 					</div>
-					<div class="col-sm-6 contact-txt position-relative">
+					<div class="col-md-6 col-sm-12 contact-txt position-relative">
 						<div class="contact-txt-bg d-flex text-center justify-content-center">
 							<div class="contact-txt-o position-relative">
 								
@@ -365,6 +397,8 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://platform.twitter.com/widgets.js"></script>
+		<script src="assets/js/jquery.countdown.min.js"></script>
 		<script src="assets/js/owl.carousel.min.js"></script>
 		<script src="assets/js/custom.js"></script>
 	</body>

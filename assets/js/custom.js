@@ -1,3 +1,5 @@
+$(document).ready(function($) {
+
 $('.sol-section__slider').owlCarousel({
     loop:true,
     margin:10,
@@ -17,4 +19,18 @@ $('.sol-section__slider').owlCarousel({
             loop:true
         }
     }
-})
+});
+    $("#time-count").countdown("2019/12/01", function(event) {
+        $(this).text(
+          event.strftime('%D days %H:%M:%S')
+        );
+    });
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('.tech-head').addClass('shrink');
+        } else {
+            $('.tech-head').removeClass('shrink');
+        }
+    });
+     
+});
